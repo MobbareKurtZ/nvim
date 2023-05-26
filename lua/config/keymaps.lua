@@ -25,4 +25,3 @@ km.set("n", "ä", "}")
 -- plugins
 km.set("n", "<leader>e", ":Neotree toggle<CR>")
 km.set("n", "<leader>fe", ":Neotree focus<CR>")
-km.set("n", "<leader>lc", "<cmd>VimtexCompile<cr>")

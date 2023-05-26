@@ -2,7 +2,8 @@ return {
   {
     "lervag/vimtex",
     keys = {
-      { "<leader>lc", "<cmd>VimTexCompile<cr>", desc = "Compile latex document" },
+      { "<leader>lc", "<cmd>VimtexCompile<cr>", desc = "Compile latex document" },
     },
+    ft = "tex",
   },
 }
