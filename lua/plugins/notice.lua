@@ -1,5 +1,5 @@
 return {
-  "folke/noice.nvim",
+  "rcarriga/nvim-notify",
   opts = {
     background_colour = "#000000",
   },
