@@ -13,7 +13,11 @@ return {
     history = true,
     delete_check_events = "TextChanged",
   },
-  keys = function()
-    return {}
-  end,
+  keys = {
+    {
+      "n",
+      "<Leader>ll",
+      '<Cmd>lua require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/lua/plugins/luasnip/"})<CR>',
+    },
+  },
 }
