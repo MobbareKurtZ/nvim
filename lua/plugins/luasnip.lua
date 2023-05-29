@@ -16,7 +16,7 @@ return {
   keys = {
     {
       "n",
-      "<Leader>ll",
+      "<Leader>L",
       '<Cmd>lua require("luasnip.loaders.from_lua").load({paths = "~/.config/nvim/lua/plugins/luasnip/"})<CR>',
     },
   },
