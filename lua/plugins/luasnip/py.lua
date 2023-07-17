@@ -10,15 +10,7 @@ local fmta = require("luasnip.extras.fmt").fmta
 local rep = require("luasnip.extras").rep
 
 return {
-  s(
-    { trig = "snip", name = "snippet" },
-    fmta(
-      [[
-        s({ trig = "<>", name = "<>" }, {
-          t("<>"),
-        }), ]],
-      { i(1), i(2), i(3) }
-    )
-  ),
+
+  -- General
   s({ trig = "pp", name = "Print" }, fmta("print(<>)", { i(1) })),
 }
