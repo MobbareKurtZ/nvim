@@ -12,6 +12,7 @@ return {
   opts = {
     history = true,
     delete_check_events = "TextChanged",
+    enable_autosnippets = true,
   },
   keys = {
     {

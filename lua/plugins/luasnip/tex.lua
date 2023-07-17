@@ -15,25 +15,25 @@ return {
   s({ trig = ",a", name = "alpha", snippetType = "autosnippet" }, {
     t("\\alpha"),
   }),
-  s({ trig = ",b", name = "beta" }, {
+  s({ trig = ",b", name = "beta", snippetType = "autosnippet" }, {
     t("\\beta"),
   }),
-  s({ trig = ",g", name = "gamma" }, {
+  s({ trig = ",g", name = "gamma", snippetType = "autosnippet" }, {
     t("\\gamma"),
   }),
-  s({ trig = ",p", name = "psi" }, {
+  s({ trig = ",p", name = "psi", snippetType = "autosnippet" }, {
     t("\\psi"),
   }),
-  s({ trig = ",o", name = "omega" }, {
+  s({ trig = ",o", name = "omega", snippetType = "autosnippet" }, {
     t("\\omega"),
   }),
-  s({ trig = ",t", name = "theta" }, {
+  s({ trig = ",t", name = "theta", snippetType = "autosnippet" }, {
     t("\\theta"),
   }),
 
   -- Math
   s(
-    { trig = "ff", name = "frac" },
+    { trig = "ff", name = "frac", snippetType = "autosnippet" },
     fmt("\\frac{<>}{<>}", {
       i(1),
       i(2),
