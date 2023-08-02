@@ -15,7 +15,7 @@ return {
             .. (diag.warning and icons.Warn .. diag.warning or "")
           return vim.trim(ret)
         end,
-        separator_style = "slope",
+        -- separator_style = "slope",
         offsets = {
           {
             filetype = "neo-tree",

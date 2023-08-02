@@ -12,10 +12,11 @@ return {
           globalstatus = true,
           disabled_filetypes = { statusline = { "dashboard", "alpha" } },
           component_separators = { left = "", right = "" },
-          section_separators = { left = "", right = "" },
+          -- section_separators = { left = "", right = "" },
+          section_separators = { left = "", right = "" },
         },
         sections = {
-          lualine_a = { { "mode", separator = { left = "" } } },
+          lualine_a = { { "mode" } }, --, separator = { left = "" } } },
           lualine_b = { "branch" },
           lualine_c = {
             {
@@ -90,7 +91,7 @@ return {
               function()
                 return " " .. os.date("%R")
               end,
-              separator = { right = "" },
+              -- separator = { right = "" },
             },
           },
         },
