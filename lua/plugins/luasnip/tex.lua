@@ -21,7 +21,13 @@ return {
   s({ trig = ",g", name = "gamma", snippetType = "autosnippet" }, {
     t("\\gamma"),
   }),
-  s({ trig = ",p", name = "psi", snippetType = "autosnippet" }, {
+  s({ trig = ",p", name = "pi", snippetType = "autosnippet" }, {
+    t("\\pi"),
+  }),
+  s({ trig = ",ph", name = "phi", snippetType = "autosnippet" }, {
+    t("\\varphi"),
+  }),
+  s({ trig = ",ps", name = "psi", snippetType = "autosnippet" }, {
     t("\\psi"),
   }),
   s({ trig = ",o", name = "omega", snippetType = "autosnippet" }, {
@@ -32,13 +38,6 @@ return {
   }),
 
   -- Math
-  s(
-    { trig = "ff", name = "frac", snippetType = "autosnippet" },
-    fmt("\\frac{<>}{<>}", {
-      i(1),
-      i(2),
-    }, { delimiters = "<>" })
-  ),
 
   s(
     { trig = "eq", name = "equation" },
@@ -67,5 +66,39 @@ return {
         rep(1),
       }
     )
+  ),
+  s(
+    { trig = "dm", name = "big mathenv", snippetType = "autosnippet" },
+    fmta(
+      [[
+        $$
+        <>
+        $$
+      ]],
+      { i(1) }
+    )
+  ),
+  s({ trig = "mk", name = "mathenv", snippetType = "autosnippet" }, fmt("$<>$", { i(1) }, { delimiters = "<>" })),
+
+  -- Operations
+  s(
+    { trig = "tt", name = "Math text", snippetType = "autosnippet" },
+    fmt("\\text{<>}", { i(1) }, { delimiters = "<>" })
+  ),
+  s(
+    { trig = "bb", name = "mathbb", snippetType = "autosnippet" },
+    fmt("\\mathbb{<>}", { i(1) }, { delimiters = "<>" })
+  ),
+  s({ trig = "rd", name = "power", snippetType = "autosnippet" }, fmt("^{<>}", { i(1) }, { delimiters = "<>" })),
+  s(
+    { trig = "bf", name = "mathbf", snippetType = "autosnippet" },
+    fmt("\\mathbf{<>}", { i(1) }, { delimiters = "<>" })
+  ),
+  s(
+    { trig = "ff", name = "frac", snippetType = "autosnippet" },
+    fmt("\\frac{<>}{<>}", {
+      i(1),
+      i(2),
+    }, { delimiters = "<>" })
   ),
 }
