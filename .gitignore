@@ -10,3 +10,6 @@ data
 *.tex
 *.py
 ./lazy-lock.json
+
+./test.tex
+./test.py
