@@ -8,7 +8,7 @@ local km = vim.keymap
 
 -- general
 km.set("i", "jk", "<ESC>")
-km.set("i", "kj", "<ESC>")
+-- km.set("i", "kj", "<ESC>")
 km.set("n", "<leader>nh", ":nohl<CR>")
 km.set("n", "x", '"_x')
 km.set("n", "<leader>+", "<C-a>")
