@@ -174,6 +174,11 @@ snippet '([A-Za-z])(\d)' "auto subscript" wrA
 endsnippet
 
 context "math()"
+snippet '_' "subscript" wrA
+_{$0}
+endsnippet
+
+context "math()"
 snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
 `!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
 endsnippet
