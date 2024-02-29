@@ -12,6 +12,8 @@ return {
     },
     presets = {
       bottom_search = true, -- use a classic bottom cmdline for search
+      command_palette = true,
+      lsp_doc_border = false,
     },
     cmdline = {
       enabled = true,
