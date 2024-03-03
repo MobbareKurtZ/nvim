@@ -131,6 +131,11 @@ snippet '([A-Za-z])_(\d\d)' "auto subscript2" wrA
 endsnippet
 
 context "math()"
+snippet '([A-Za-z])(k)\2' "auto subscript k" wrA
+`!p snip.rv = match.group(1)`_{`!p snip.rv = match.group(2)`}
+endsnippet
+
+context "math()"
 snippet == "equals" iA
 &= $1 \\\\
 endsnippet
@@ -172,7 +177,7 @@ endsnippet
 
 context "math()"
 snippet () "left( right)" iA
-\left( ${1:${VISUAL}} \right) $0
+\left( ${1:${VISUAL}} \right$0
 endsnippet
 
 context "math()"
@@ -273,6 +278,11 @@ endsnippet
 context "math()"
 snippet rd "to the ... power" iA
 ^{$1}$0
+endsnippet
+
+context "math()"
+snippet dr "to the ... power" iA
+{}^{$1}$0
 endsnippet
 
 context "math()"
@@ -481,14 +491,13 @@ snippet || "mid" iA
  \mid 
 endsnippet
 
-
 context "math()"
-snippet seq "subset" Ai
+snippet seq "subsetequal" Ai
 \subseteq
 endsnippet
 
 context "math()"
-snippet cc "subset" Ai
+snippet sus "subset" Ai
 \subset 
 endsnippet
 
@@ -588,13 +597,13 @@ _\text{$1} $0
 endsnippet
 
 context "math()"
-snippet bb "bbtext" iA
-\textbb{$1}$0
+snippet bb "bbmath" iA
+\mathbb{$1}$0
 endsnippet
 
 context "math()"
-snippet bf "bftext" iA
-\bftext{$1}$0
+snippet bf "textbf" iA
+\textbf{$1}$0
 endsnippet
 
 context "math()"
