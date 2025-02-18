@@ -14,6 +14,16 @@ let g:tex_IgnoredWarnings =
     \'Double space found.'."\n"
 let g:Tex_IgnoreLevel = 8
 let g:vimtex_quickfix_open_on_warning = 0
+let g:vimtex_compiler_latexmk = {
+      \ 'build_dir' : '',
+      \ 'options' : [
+      \   '-pdf',
+      \   '-shell-escape',
+      \   '-verbose',
+      \   '-file-line-error',
+      \   '-interaction=nonstopmode',
+      \ ],
+      \}
 ]])
 
 return {

@@ -14,6 +14,7 @@ km.set("n", "x", '"_x')
 km.set("n", "<leader>+", "<C-a>")
 km.set("n", "<leader>-", "<C-x>")
 km.set("t", "<ESC>", "<C-\\><C-n>")
+km.set("t", "<C-n>", "<C-\\>")
 
 km.set("n", "<leader>wd", "<C-W>c", { desc = "Delete window" })
 km.set("n", "<leader>ws", "<C-W>s", { desc = "Split window below" })

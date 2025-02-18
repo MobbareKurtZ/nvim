@@ -257,7 +257,7 @@ endsnippet
 
 context "math()"
 snippet sq "\sqrt{}" iA
-\sqrt{${1:${VISUAL}}} $0
+\sqrt{${1:${VISUAL}}}$0
 endsnippet
 
 context "math()"
@@ -428,12 +428,12 @@ endsnippet
 
 context "math()"
 snippet invs "inverse" iA
-^{-1}
+^{-1}$0
 endsnippet
 
 context "math()"
 snippet trans "transpose" iA
-^{\top}
+^{\top}$0
 endsnippet
 
 context "math()"
@@ -543,7 +543,7 @@ endsnippet
 
 context "math()"
 snippet RR "real" iA
-\R
+\mathbb{R}
 endsnippet
 
 context "math()"
@@ -599,6 +599,16 @@ endsnippet
 context "math()"
 snippet bb "bbmath" iA
 \mathbb{$1}$0
+endsnippet
+
+context "math()"
+snippet bx "bfx" iA
+\textbf{x}$0
+endsnippet
+
+context "math()"
+snippet by "bfy" iA
+\textbf{y}$0
 endsnippet
 
 context "math()"
@@ -672,8 +682,20 @@ endsnippet
 
 priority 10
 context "math()"
+snippet "tilde" "tilde" riA
+\tilde{$1}$0
+endsnippet
+
+priority 10
+context "math()"
 snippet "bar" "bar" riA
 \overline{$1}$0
+endsnippet
+
+priority 100
+context "math()"
+snippet "((\d+)|(\d*)(\\)?([A-Za-z]+)((\^|_)(\{\d+\}|\d))*)tilde" "tilde" riA
+\tilde{`!p snip.rv=match.group(1)`}
 endsnippet
 
 priority 100
