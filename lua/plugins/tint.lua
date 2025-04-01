@@ -1,4 +1,4 @@
 return {
   "levouh/tint.nvim",
-  config = true,
+  config = false,
 }
