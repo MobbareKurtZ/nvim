@@ -6,7 +6,7 @@ vim.keymap.set("n", "x", '"_x', opts)
 
 -- Buffers
 vim.keymap.set("n", "<leader>bn", "<cmd> enew <CR>", { desc = "New buffer" })
-vim.keymap.set("n", "<leader>bd", "", { desc = "Delete buffer" })
+vim.keymap.set("n", "<leader>bd", "<cmd>bd<CR>", { desc = "Delete buffer" })
 vim.keymap.set("n", "H", ":bprev<CR>", opts)
 vim.keymap.set("n", "L", ":bnext<CR>", opts)
 
@@ -22,7 +22,12 @@ vim.keymap.set("n", "<leader>fk", ":Telescope file_browser path=%:p:h select_buf
 
 -- UI
 vim.keymap.set("n", "<leader>uw", "<cmd>set wrap!<CR>", { desc = "Set text wrap" })
+vim.keymap.set("n", "<leader>ug", "<cmd>GitBlameToggle<CR>", { desc = "Toggle git blame" })
 vim.keymap.set("n", "<leader>l", ":Lazy<CR>", opts)
+
+-- Code
+vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "LSP: Rename" })
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "LSP: Code Action" })
 
 -- Terminal
 vim.keymap.set("t", "<ESC>", "<C-\\><C-n>")
