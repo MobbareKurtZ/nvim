@@ -3,6 +3,8 @@ local opts = { noremap = true, silent = true }
 -- General
 vim.keymap.set("i", "jk", "<Esc>", opts)
 vim.keymap.set("n", "x", '"_x', opts)
+vim.keymap.set("v", ">", ">gv", opts)
+vim.keymap.set("v", "<", "<gv", opts)
 
 -- Buffers
 vim.keymap.set("n", "<leader>bn", "<cmd> enew <CR>", { desc = "New buffer" })
